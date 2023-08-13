@@ -1,0 +1,30 @@
+\problemname{Packagemanager}
+\noindent
+Doris has started her work as a packagemanager at the Pacman company (a part of the Sudo group). Her job is to make sure each of their stores has the most recent model of envelope, cardboard box, etc. Doris would however like to automate this task.
+
+\noindent
+She has a list of all types of packages the company has, as well as the latest versions of these. For each store she also has a list of the packagetype they have in stock, and which versions they are. If any store has a type of package, but not the latest version, she has to alert them!
+
+\section*{Input}
+\noindent
+Starts with a row of two integers, the number of packagetypes, $t$, and the number of stores, $b < 10^3$ ($t \cdot b < 10^6$). Next follows a row of $b$ integers $t_i \leq t$, the number of packagetypes each store has. At last follows rows describing each package consisting of a name (consisting of a-z with length 3-10), a string, and a versionnumber, an integer $0 < v \leq 10^3$. The first $t$ such lines represents every package and their latest version, followed by $t_1, t_2, \dots$ rows representing the first, second $\dots$ store's packagetypes and versionnumbers (guaranteed to be $\leq$ the latest version). Note that every package has a unique name and is mentioned at most once for each store.
+
+\section*{Output}
+\noindent
+$b$ rows with one integer each, the number of versionsteps that has to be updated in total for each store.
+
+\section*{Points}
+\noindent
+Your solution will be tested on a number of testgroups.
+To earn points in a testgroup all tests in it must succeed.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Points & Limits \\ \hline
+  $1$    & $20$       &  $t = 1$ \\ \hline 
+  $2$    & $20$       &  $b = 1$ \\ \hline
+  $3$    & $20$       &  All stores has exactly one package with the wrong version \\ \hline
+  $4$    & $20$       &  $t, b \leq 100$ \\ \hline
+  $5$    & $20$       &  No further restrictions \\ \hline
+\end{tabular}

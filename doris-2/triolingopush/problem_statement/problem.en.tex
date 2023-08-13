@@ -1,0 +1,42 @@
+\problemname{Triolingo Push}
+\noindent
+Trio from Triolingo wants to remind you to take your daily programming lessons!
+\illustration{0.5}{triolingo}{cc by-s}
+
+\noindent
+To make sure you actually will complete your lesson every day, Trio sends you several notifications according to the following increasing pattern:
+
+\noindent
+On the first day, Trio sends $1$ notification.
+On the second day, Trio sends $2$ notifications.
+For each day after the second, the number of notifications is the number of notifications the day before, added with the number of notifications $2$ days ago, added with $1$ extra notification.
+The number of notifications could also be described with the following recursive function:
+$$f(1)=1,f(2)=2,f(N)=f(N-1)+f(N-2)+1$$. On day $N$, Trio will send out $f(N)$ notifications.
+
+\noindent
+How many notifications will Trio send out on the $N$:th day? To make sure the number of notifications fits on the screen, output the integer modulo $10^9+7$.
+
+
+\section*{Input}
+\noindent
+The only and first line consists of one integer number, $N$, the day Trio is sending notifications.
+
+\section*{Output}
+\noindent
+Write an integer - The total number of notifications that Trio will send that day modulo $10^9+7$.
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+\noindent
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Restrictions \\ \hline
+  $1$    & $20$       &  $1 \leq N \leq 3$ \\ \hline
+  $2$    & $20$       &  $1 \leq N \leq 25$ \\ \hline
+  $3$    & $60$       &  $1 \leq N \leq 10^6$ \\ \hline
+  $4$    & $1$        &  $1 \leq N \leq 10^{18}$ \\ \hline
+\end{tabular}

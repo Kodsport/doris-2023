@@ -1,0 +1,51 @@
+\problemname{Ding Dong Ditch}
+\noindent
+Raunak och hans vänner vill dra ett skämt på sina grannar genom att utföra det klassiska "Ding Dong Ditch". 
+De vill i tur och ordning plinga på ringklockan på ett antal av sina grannar, och sedan springa därifrån utan att grannarna ser dem. 
+Men vissa grannar är väldigt farliga, då grannarna kan bli agra och kan även bitas!
+
+
+\noindent
+På deras gata finns det $N$ grannar. 
+För varje granne $i$ har grannen ett värde på hur arg grannen blir efter att ha blivit plingad på, $A_i$. 
+Raunak har $Q$ vänner, inklusive han själv. För varje vän $j$ har vännen en egen ambitionsnivå $B_j$ som står för antalet hus den kan plinga på innan vännen fegar ut. 
+
+
+\noindent
+För varje vän som plingar på vill den välja $B_j$ olika hus, och minimera summan av arghetsvärdena $A_i$ av alla dessa hus. 
+Hjälp Raunak att lista ut vad den minsta möjliga summan av arghetsvärdet som varje vän kan uppnå!
+
+
+\noindent
+Notera att olika vänner kan plinga på samma hus.
+
+\section*{Indata}
+\noindent
+Första raden består av två positiva heltal $1 \leqslant N \leqslant 2 \cdot 10^5$ respektive $1 \leqslant Q \leqslant 10^5$ som motsvarar antalet hus som finns i grannskapet respektive antalet vänner som Raunak har.
+Raden efter består av $N$ distinkta positiva heltal separerade med mellanslag, där varje heltal $1 \leqslant A_i \leqslant 10^9$ är arghetsvärdet på vardera.
+Sista raden består av $Q$ positiva heltal separerade med mellanslag, där varje heltal $1 \leqslant B_j \leqslant N$ står för antalet hus vardera vän ska plinga på vid.
+
+
+\section*{Utdata}
+\noindent
+Skriv ut $Q$ rader, där varje rad består ett heltal - Det minsta summan av arghetsvärdena av husen som vännen $j$ plingat på. 
+
+
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper.
+\noindent
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $10$       &  $Q=1, N \leqslant 10$ \\ \hline                 %O(huge)
+  $2$    & $25$       &  $Q\leqslant 10^3, N \leqslant 100$\\ \hline     %O(qn^2) 
+  $3$    & $10$       &  Alla $B_j$ är antingen $1$ eller $N$. \\ \hline
+  $4$    & $20$       &  $Q\leqslant 10^3, N \leqslant 10^4$ \\ \hline   %O(nlogn + qn) 
+  $5$    & $35$       &  Inga ytterligare begränsningar \\ \hline        %O(nlogn + q) or O(nlogn + qlogq)
+\end{tabular}

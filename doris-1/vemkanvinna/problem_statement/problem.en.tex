@@ -1,0 +1,33 @@
+\problemname{Who can win?}
+\noindent
+Johan and Abdullah are still playing tic-tac-toe, so now they want help figuring out who can still win in their game.
+To win in tic-tac-toe you need to have three of your letter in a row, either vertically, horizontally, or diagonally.
+Johan uses the letter \texttt{X} and makes the first move, and Abdullah uses the letter \texttt{O}. This implies that Johan could at most have $5$ \texttt{X}-pieces on the board, while Abdullah could at most have $4$ \texttt{O}-pieces.
+It is guaranteed that no one has won.
+
+\section*{Input}
+\noindent
+Input consists of a valid tic-tac-toe position, where an underscore \texttt{\_} represents an empty square, and the letters \texttt{X} and \texttt{O} represent Johan's and Abdullah's moves.
+The position is described by three rows, each containing three space-separated characters. It is guaranteed that no player has already won.
+
+\section*{Output}
+\noindent
+Print who can still win, if anyone.
+\noindent
+If both players can still win, print ``\texttt{Abdullah och Johan kan vinna}''.
+If only one person can win, print their name, then ``\texttt{kan vinna}''.
+If no player can win, then print ``\texttt{ingen kan vinna}''.
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+\noindent
+To receive points for a group, your solution must handle every test-case in the group.
+
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Restrictions \\ \hline
+  $1$    & $5$       &  All squares are filled \\ \hline
+  $2$    & $65$       &  Either Abdullah or Johan can win, not both \\ \hline
+  $3$    & $30$       &  No further restrictions \\ \hline
+\end{tabular}

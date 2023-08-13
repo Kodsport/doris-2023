@@ -1,0 +1,30 @@
+\problemname{Monopoly}
+\noindent
+Doris is playing monopoly with her friends, and it is now her turn to roll the dice.
+In standard monopoly you roll two $6$-sided dice, and then walk the same number of steps as the sum of the two dice.
+From her current position, she will end up on her opponents' hotels if the sum is equal to one of the integers $A_1, \dots, A_N$.
+What is the probability that she will end up on one of her opponents' hotels during her current turn?
+You do not have to consider the rule about rerolling if both dice show the same number or any other rule from monopoly.
+
+\section*{Input}
+\noindent
+The first line consists of an integer $N$ ($1 \leq N \leq 11$), the number of hotels the opponents own.
+The second line consists of $N$ integers $A_1, \dots, A_N$ ($2 \leq A_1 < \dots < A_N \leq 12$), the distances to each of the opponents' $N$ hotels.
+
+\section*{Output}
+\noindent
+Output a decimal, the probability that the sum of the two dice is one of the numbers $A_1, \dots, A_N$.
+Your answer will be considered correct if its absolute error does not exceed $10^{-4}$.
+
+\section*{Grading}
+\noindent
+Your solution will be tested on two test-case groups.
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Constraints \\ \hline
+  $1$    & $30$       &  $N = 1$  \\ \hline
+  $2$    & $70$       &  No further constraints \\ \hline
+\end{tabular}

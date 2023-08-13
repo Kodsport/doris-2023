@@ -1,0 +1,30 @@
+\problemname{Pakethanterare}
+\noindent
+Doris har börjat sitt nya jobb som pakethanterare på företaget Pacman (en del av Sudo koncernen). Doris jobb är att säkerställa att alla deras butiker har de senaste modellerna av kartonger, brev, och övriga pakettyper. Hon hoppas nu kunna automatisera detta jobb.
+
+\noindent
+Hon har en lista av alla typer av paket företaget har, och de senaste versionerna av dessa. För varje butik har hon också en lista av vilka pakettyper de använder, och vilka versioner dessa är i. Om någon butik har en typ av paket, men inte den senaste versionen, måste hon meddela dem! 
+
+\section*{Indata}
+\noindent
+Börjar med en rad med två heltal, antalet pakettyper, $t$,  och antalet butiker, $b < 10^3$ ($t \cdot b < 10^6$). Efter det följer en rad med $b$ heltal $t_i \leq t$, antalet pakettyper varje butik har. Till slut följer rader beskrivande paket bestående av ett namn (bestående av a-z med längd 3-10), en sträng, separerat med ett mellanslag till versionsnumret, ett heltal, $0 < v \leq 10^3$. De första $t$ sådana representerar alla paket och deras senaste version, följt av $t_1, t_2, \dots$ rader med första respektive andra respektive $\dots$ butikens pakettyper och versionsnummer (garanterat $\leq$ än senaste versionen). Observera att paketnamn är unika och att varje paket nämns max 1 gång per butik.
+
+\section*{Utdata}
+\noindent
+$b$ rader med varsitt heltal, antalet versionssteg som måste uppdateras totalt för varje butik.
+
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $20$       &  $t = 1$ \\ \hline 
+  $2$    & $20$       &  $b = 1$ \\ \hline
+  $3$    & $20$       &  Alla butiker har exakt en pakettyp med fel version \\ \hline
+  $4$    & $20$       &  $t, b \leq 100$ \\ \hline
+  $5$    & $20$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

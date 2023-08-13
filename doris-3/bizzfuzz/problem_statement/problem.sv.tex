@@ -1,0 +1,26 @@
+\problemname{BizzFuzz}
+\noindent
+Algot var precis på en intervju för ett utvecklarjobb och han fick då lösa det klassiska problemet FizzBuzz, och nu undrar han hur det skulle gått om de ändrat lite på problemet. För att lösa FizzBuzz skriver man ett program som skriver ut heltalen från $1$ till $100$, fast man byter ut alla tal delbara med $3$ mot "Fizz", alla tal delbara med $5$ mot "Buzz" och alla tal delbara med $3$ och $5$ med "FizzBuzz". 
+
+\noindent
+Han ber han dig räkna ut hur många tal mellan en undre gräns $A$ och en övre gräns $B$ (inklusivt) som är delbara med två tal $C$ och $D$.
+\section*{Indata}
+\noindent
+En rad med talen $A, B, C, D$ så att \(1 \leq A \leq B \leq 10^{18}\) och \(1 \leq C, D \leq B\) .
+\section*{Utdata}
+\noindent
+En rad med antalet $X$ så att $A \le X \le B$ där $C$ delar $X$ och $D$ delar $X$.
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $20$       &  $|B-A| < 1000$ \\ \hline 
+  $2$    & $20$       &  $A = 1, C = 1$ \\ \hline
+  $3$    & $20$       &  $D = 2 \cdot C$ \\ \hline
+  $4$    & $50$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

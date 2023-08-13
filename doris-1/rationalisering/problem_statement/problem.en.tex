@@ -1,0 +1,30 @@
+\problemname{Rationalization}
+\noindent
+Having recently read about Pythagoras, Doris has become convinced that there are no irrational numbers!
+She claims that every number can be written as the quotient of two whole numbers $A$ and $B$.
+As an exercise, she has decided to find these ratios for some positive physical constants.
+Because every constant has some error $F$, she only wants a ratio with a quotient between $C-F$ and $C+F$.
+Furthermore, since she dislikes long numbers, she wants to find the pair $A$, $B$, whose quotient lies within the interval and has the smallest $A$. If there are many such $A$, she chooses the pair $A$, $B$ with smaller $B$.
+Can you help her accomplish this goal?
+
+\section*{Input}
+\noindent
+The first contains two positive real numbers $C, F$, ($0 \leq C \leq 10$), ($10^{-8} \leq F \leq 0.1$), the desired quotient and the margin for error, both in decimal form with at most 6 significant digits.
+
+\section*{Output}
+\noindent
+Print two lines with one positive integer each, $A$ and $B$. It is guaranteed that these are less than $10^6$.
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Restrictions \\ \hline
+  $1$    & $20$       &  $B = 1000$ \\ \hline 
+  $2$    & $40$       &  $A, B \leq 10^{3}$ \\ \hline
+  $3$    & $40$       &  No further restrictions \\ \hline
+\end{tabular}

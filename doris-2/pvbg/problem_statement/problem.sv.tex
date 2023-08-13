@@ -1,0 +1,36 @@
+\problemname{Plants vs Bad Guys}
+\noindent
+Ånej! Det är massor av stygga gossar som håller på att krypa sig fram på Mikaels tomt och vill attackera Mikael!
+Som tur är har Mikael planterat flera ärtskytter på sin tomt som kan skydda Mikael från de stygga gossarna som vill göra honom illa.
+
+\noindent
+Mikaels tomt består av $N$ rader, där Mikael har planterat $R_i$ ärtskytter på rad $i$. Ärtskytterna skyddar bara den raden av tomten som ärtskytten befinner sig vid, och varje ärtskytt kan skydda raden från $1$ stygg gosse varje våg.
+De stygga gossorna kommer i vågor. Under den första vågen kommer det finnas $1$ stygg gosse på vardera rad, under den andra vågen finns det $2$ stygga gossar på varje rad, och vid våg nummer $t$ finns det $t$ stygga gossar på varje rad.
+Under en våg kommer Mikael att bli anfallen om ärtskytterna inte lyckas skydda någon rad från de stygga gossarna! 
+Alltså, ifall det finns någon rad där det finns fler stygga gossar än vad det finns ärtskytter, så kommer de stygga gossarna att lyckas ta sig fram till Mikael (och äta upp honom!!!).
+
+\noindent
+Hur många vågor av stygga pojkar kan Mikaels ärtskytter skydda honom från innan de stygga gossarna lyckas ta sig fram till Mikael?
+
+\section*{Indata}
+\noindent
+Första raden består av ett heltal $(1 \leqslant N \leqslant 10^6)$, antalet rader som Mikaels tomt är indelad i.
+Andra raden består av $N$ heltal, där varje heltal $(1 \leqslant R_i \leqslant 10^9)$ står för hur många ärtskyttare det finns vid rad $i$. 
+
+\section*{Utdata}
+\noindent
+Skriv ut ett heltal $t$ - Den första vågen som kommer lyckas att ta sig igenom ärtskyttarnas försvar och skada Mikael. Med andra ord, det minsta $t$ där de stygga gossarna kan ta sig förbi tomten.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper.
+\noindent
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $10$       &  $R_i \leqslant 9, N = 5$ \\ \hline
+  $2$    & $40$       &  $R_i \leqslant 10^3, N \leqslant 10^3$ \\ \hline
+  $3$    & $50$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

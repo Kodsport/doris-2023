@@ -1,0 +1,30 @@
+\problemname{Rationalisering}
+\noindent
+Efter att ha läst en bok om Pythagoras har Doris blivit övertygad om att det inte finns några irrationella tal!
+Hon menar alltså att varje tal faktiskt kan skrivas som kvoten av två heltal $A$ och $B$.
+I denna anda har hon bestämt sig för att hitta dessa kvoter för några positiva fysiska konstanter.
+Eftersom det finns en viss felmarginal $F$ i alla konstanter nöjer hon sig dock med att hitta en kvot som är mellan $C-F$ och $C+F$.
+Dessutom tycker hon inte om onödigt långa tal, så hon vill hitta det paret $A$, $B$, vars kvot ligger inom denna felmarginal och har minst $A$. Om det finns flera sådana $A$ väljer hon det paret $A$, $B$ med minst $B$.
+Kan du hjälpa henne med detta?
+
+\section*{Indata}
+\noindent
+Första raden innehåller två heltal $C, F$, ($0 \leq C \leq 10$), ($10^{-8} \leq F \leq 0.1$), det önskade talet och den felmarginal som tillåts, båda på decimalform med maximalt 6 värdesiffror.
+
+\section*{Utdata}
+\noindent
+Skriv ut två rader som vardera innehåller ett positivt heltal, $A$ respektive $B$. Det är garanterat att dessa är mindre än $10^6$.
+
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $20$       &  $B = 1000$ \\ \hline 
+  $2$    & $40$       &  $A, B \leq 10^{3}$ \\ \hline
+  $3$    & $40$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

@@ -1,0 +1,40 @@
+\problemname{Throwing bridges}
+\noindent
+In the province of Wulingyuan in China, there are $N$ very steep cliffs. It is very popular for tourists to visit the mountain peaks.
+\illustration{0.5}{cliffs}{Cliffs in Wulingyuan. cc by-sa}
+
+Often, they even want to visit more than one
+in order to take photos from different angles. To facilitate this, several suspension bridges have been built so that one can walk from each mountain peak to all other mountain peaks.
+All was well until the High-altitude hijacker stole several bridges in the perfect heist - no one can catch up with you on the mountain peaks without using the bridges (which he just stole!).
+You have now been tasked with solving the problem with the bodybuilder John Xina to help you. He is so strong that he can rip out one of the remaining $M$ bridges and then
+throw it so that it connects two other mountains. However, this damages the bridges a little, so you want to avoid unnecessary throws. Help John Xina determine whether it is
+possible to perform throws so that one can walk between all pairs of mountain peaks. If it is possible, he wants to know which bridges to throw where.
+He also wants to make as few throws as possible. Even if John Xina cannot reach a certain bridge through other bridges, this is not a problem as he can climb down
+the mountain he is on and climb up any other mountain he wants.
+
+\section*{Input}
+\noindent
+The first row of input contains two integers, $N,M$ ($1 \leq N,M \leq 10^5$), the number of mountain peaks and the number of remaining bridges.
+Afterwards, $M$ lines follow, each containing two integers $u_i$ and $v_i$ ($1 \leq u_i, v_i \leq N$, $u_i \neq v_i$), which means that there is a bridge between
+$u_i$ and $v_i$. There is never more than one bridge between two mountain peaks.
+
+\section*{Output}
+\noindent
+Output ``Ja'' or ``Nej'', whether it is possible to throw bridges so that one can walk between each pair of cliffs.
+If the answer is yes, output an integer $K$: the smallest number of throws needed.
+On the following $K$ rows, output four integers $u_1, v_1, u_2, v_2$,  which describe that the bridge between $u_1$ and $v_1$ should be thrown so that it connects $u_2$ and $v_2$.
+\section*{Points}
+\noindent
+Your solution will be tested on a number of testgroups.
+To earn points in a testgroup all tests in it must succeed.
+For each subtask, if you correctly answer whether it is possible or not and correctly determine the minimum number of throws, but perform incorrect throws,
+you will receive $50\%$ of the subtask's points.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Points & Limits \\ \hline
+  $1$    & $20$       &  There are no cycles between mountains.\\ \hline 
+  $2$    & $40$       &  $N, M \leq 1000$ \\ \hline
+  $3$    & $40$       &  No further restrictions \\ \hline
+\end{tabular}

@@ -1,0 +1,39 @@
+\problemname{Kasta broar}
+\noindent
+I provinsen Wulingyuan i Kina finns $N$ stycken väldigt branta klippor. Det är väldigt populärt för turister att besöka bergstopparna.
+\illustration{0.5}{cliffs}{Klippor i Wulingyuan. cc by-sa}
+
+Ofta vill de till och med besöka mer än en för att kunna ta foton från flera vinklar. För att underlätta detta har det byggts ett flertal hängbroar så att
+man kan gå från varje bergstopp till alla andra bergstoppar. Allt var frid och fröjd ända tills Höghöjdshärjaren stal ett flertal broar i den perfekta stöten - ingen kan hinna ikapp
+dig uppe i bergstopparna utan att använda broarna (som han precis stal!). Du har nu fått i uppdrag att lösa problemet. Till din hjälp har du body-buildern John Xina. Han är så stark att han kan rycka loss
+en av de $M$ kvarvarande broarna och sedan kasta den så att den kopplar ihop två andra berg. Detta skadar dock broarna lite, därför vill du undvika onödiga kast. 
+Hjälp John Xina avgöra om det går att utföra kast så att man kan gå mellan alla par av bergstoppar. Om det går vill han veta vilka broar han ska kasta vart.
+Han vill dessutom göra så få kast som möjligt. Även om John Xina inte kan gå till en viss bro genom andra broar är detta inget problem, då han kan klättra ner för berget han befinner
+sig på och klättra upp för vilket annat berg han vill.
+
+
+\section*{Indata}
+\noindent
+Den första raden innehåller två heltal $N,M$ ($1 \leq N,M \leq 10^5$), antalet bergstoppar och antalet kvarvarande broar.
+Därefter följer $M$ rader som innehåller två heltal $u_i, v_i$ ($1 \leq u_i, v_i \leq N$, $u_i \neq v_i$), vilket betyder att det finns en bro mellan $u_i$ och $v_i$. Det finns aldrig mer än en bro mellan två bergstoppar.
+
+\section*{Utdata}
+\noindent
+Skriv först ut ``Ja'' eller ``Nej'', om det går att kasta broar så att man kan gå mellan alla par av klippor.
+Om svaret är ja, skriv sedan ut ett heltal $K$: den minsta mängden kast som behöver utföras.
+Skriv därefter ut $K$ rader som vardera innehåller fyra heltal $u_1, v_1, u_2, v_2$, som beskriver att bron mellan $u_1$ och $v_1$ ska kastas så att den kopplar ihop $u_2$ och $v_2$.
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen. \\
+För varje delgrupp, om du korrekt svarar på om det går eller inte och korrekt bestämmer minsta antalet kast, men utför felaktiga kast, så får du $50\%$ av gruppens poäng.
+
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $20$       &  Det finns inga cykler mellan bergstoppar \\ \hline 
+  $2$    & $40$       &  $N, M \leq 1000$ \\ \hline
+  $3$    & $40$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

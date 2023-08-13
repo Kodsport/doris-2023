@@ -1,0 +1,35 @@
+\problemname{Vem Kan Vinna?}
+\noindent
+Johan och Abdullah spelar fortfarande tre i rad, nu vill de ha hjälp att lista ut om det fortfarande går att vinna.
+En person har vunnit i tre i rad om de har tre av sin bokstav i rad, antingen vertikalt, horisontellt eller diagonalt.
+Johan spelar med \texttt{X} och han börjar, Abdullah spelar med \texttt{O}. Detta innebär att Johan kan maximalt ha $5$ st \texttt{X} på brädan och Abdullah kan maximalt ha $4$ st \texttt{O}.
+Det är garanterat att ingen har vunnit.
+
+
+
+\section*{Indata}
+\noindent
+Ditt program kommer få en giltig tre i rad-position där ett understreck \texttt{\_} representerar en tom ruta, och bokstäverna \texttt{X} och \texttt{O} representerar Johan och Abdullahs drag.
+Positionen består av tre rader, med tre blankstegsseparerade tecken vardera. Det garanteras att ingen spelare redan har vunnit.
+
+\section*{Utdata}
+\noindent
+Skriv ut vem eller vilka som fortfarande kan vinna.
+\noindent
+Om både Johan och Abdullah kan vinna, skriv ``\texttt{Abdullah och Johan kan vinna}''.
+Om bara en person kan vinna, skriv deras namn sedan ``\texttt{kan vinna}''.
+Om ingen kan vinna, skriv ``\texttt{ingen kan vinna}''.
+
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+\noindent
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $5$       &  Alla rutor är ifyllda \\ \hline
+  $2$    & $65$       &  Antingen Abdullah eller Johan kan fortfarande vinna, inte båda \\ \hline
+  $3$    & $30$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

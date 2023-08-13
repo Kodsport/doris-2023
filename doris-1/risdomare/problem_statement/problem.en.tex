@@ -1,0 +1,45 @@
+\problemname{Rice judge}
+\noindent
+Sir Dorian loves to eat rice. 
+He always eats lunch at the rice palace, where every day there are $N$ portions of rice.
+He has eaten rice for so long that he can determine the amount of rice grains in a portion, in addition to the size of the rice grains in nanometers simply by looking at the portion.
+
+\noindent
+To truly enjoy the rice, he has decided that he will only eat one portion of rice per day. 
+After years of rice tasting, Dorian has started preferring larger rice grains. When selecting a portion, it's just as important to him that the portion is big and that the grains of rice are large.
+Therefore, he wants to eat the portion of rice with the largest sum of the number of grains of rice and the size of the grains.
+If there are multiple portions with the same sum of the number of grains and size of grains, he has a bit of trouble deciding.
+Depending on what he prefers that day, he either chooses the portion with more grains of rice or larger grains of rice out of all portions with the maximum possible sum.
+Dorian has created a list containing the number of grains of rice and the size of the grains for each of the $N$ portions but is too tired to decide which one he should choose.
+Therefore, he wants you to write a program that decides which portion he should pick, given his list and preference that day.
+
+\section*{Input}
+\noindent
+The first line contains the integer $N$ $(1 \leq N \leq 10^5)$, the number of portions.
+
+\noindent
+Then there will line containing a string that is either ``\texttt{antal}'' or ``\texttt{storlek}'' - whether Sir Dorian preferes a larger portion or larger grains today.
+
+\noindent
+After that $N$ lines follow, where the $i$:th line contains the integers $A_i$ and $S_i$ $(0 \leq A_i, S_i \leq 10^9)$, the number of grains of rice and the size of the grains of rice measured in nanometers in the $i$:th portion.
+It is guaranteed that there are no two portions with excactly the same number of grains of rice and the same size of grains. This guarantees that the solution will be unique.
+
+\section*{Output}
+\noindent
+Print an integer, the index of the portion that Sir Dorian will like the most (one indexed).
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+\noindent
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Restrictions \\ \hline
+  $1$    & $20$       &  $N \leq 100$  \\ \hline 
+  $2$    & $30$       &  All sums of number of grains and size of grains will be the same \\ \hline 
+  $3$    & $20$       &  Dorian prefers larger portions today \\ \hline
+  $4$    & $30$       &  No further restrictions \\ \hline
+\end{tabular}

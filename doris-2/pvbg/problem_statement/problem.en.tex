@@ -1,0 +1,40 @@
+\problemname{Plants vs Bad Guys}
+\noindent
+Oh no! There are a bunch of bad guys creeping around on Mikael's lawn, and they all want to attack Mikael! 
+Luckily, Mikael has planted several peashooters on his lawn that can protect him from the bad guys.
+
+\noindent
+Mikael's lawn consists of $N$ rows, where Mikael has planted $R_i$ peashooters on row $i$. The peashooters only protect the row of the lawn where the peashooter is located, and each peashooter can protect the row from $1$ bad guy every wave.
+The bad guys come in waves. During the first wave, there will be $1$ bad guy on each row, during the second wave there will be $2$ bad guys on each row, and at wave number $t$, there will be $t$ bad guys on each row.
+Mikael will be attacked during a wave if the peashooters fail to protect any row from the naughty boys! 
+In other words, if there is any row where there are more bad guys than there are peashooters, the bad guys will successfully reach Mikael (and maybe even eat him!!!).
+
+\noindent
+How many waves of bad guys can Mikael's peashooters protect him, before the bad guys manage to reach Mikael?
+
+
+\section*{Input}
+\noindent
+The first line consists of an integer $(1 \leqslant N \leqslant 10^6)$, the number of rows on Mikael's lawn.
+The second line consists of $N$ integers, where each integer $(1 \leqslant R_i \leqslant 10^9)$ represents the number of peashooters located at row $i$.
+
+
+\section*{Output}
+\noindent
+Print an integer $t$ - the first wave that will successfully breach the peashooters' defense and harm Mikael. 
+In other words, the minimum value of $t$ for which the bad guys can pass through the lawn.
+
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Constraints \\ \hline
+  $1$    & $10$       &  $R_i \leqslant 9, N = 5$ \\ \hline
+  $2$    & $40$       &  $R_i \leqslant 10^3, N \leqslant 10^3$ \\ \hline
+  $3$    & $50$       &  No further restrictions \\ \hline
+\end{tabular}

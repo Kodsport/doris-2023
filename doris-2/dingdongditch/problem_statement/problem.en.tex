@@ -1,0 +1,51 @@
+\problemname{Ding Dong Ditch}
+\noindent
+Raunak and his friends want to play a prank on their neighbors by performing the classic "Ding Dong Ditch". 
+They want to individually ring the doorbell of a number of their neighbors and then run away from there. 
+But some neighbors are very dangerous, since they could get very angry and even potentially bite you!
+
+
+\noindent
+There are $N$ neighbors that live on their street.
+For each neighbor $i$, the neighbor has a value $A_i$ that represents how angry they become when their doorbell is rung.
+Raunak has $Q$ friends, including himself. For each friend $j$ they have a specific level of ambition $B_j$, which represents the number of houses they can ring the doorbell on before chickening out.
+
+
+\noindent
+For each friend who rings the doorbell, they want to choose $B_j$ different houses that minimizes the sum of the anger values $A_i$ of all of those houses. 
+Help Raunak figure out the smallest possible sum of anger values that each friend can achieve!
+
+
+\noindent
+Note that multiple friends may ring the doorbell of the same house.
+
+
+\section*{Input}
+\noindent
+The first line consists of two positive integers $N, Q$ ($1 \leqslant N \leqslant 2 \cdot 10^5$, $1 \leqslant Q \leqslant 10^5$), the number of houses in the neighborhood and the number of friends that Raunak has, respectively.
+The next line consists of $N$ distinct positive integers separated by spaces, where each integer $1 \leqslant A_i \leqslant 10^9$ represents the anger value of each neighbor.
+The last line consists of $Q$ positive integers separated by spaces, where each integer $1 \leqslant B_j \leqslant N$ represents how many houses that friend $j$ can ring the doorbell of.
+
+
+\section*{Output}
+\noindent
+Print $Q$ lines, where each line consists of an integer - The smallest sum of anger value that friend $j$ can achieve by ringing $B_j$ doorbells. 
+
+
+
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+\noindent
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Constraints \\ \hline
+  $1$    & $10$       &  $Q=1, N \leqslant 10$ \\ \hline            
+  $2$    & $25$       &  $Q\leqslant 10^3, N \leqslant 100$\\ \hline    
+  $3$    & $10$       &  All $B_j$ are either $1$ or $N$. \\ \hline
+  $4$    & $20$       &  $Q\leqslant 10^3, N \leqslant 10^4$ \\ \hline   
+  $5$    & $35$       &  No further restrictions \\ \hline        
+\end{tabular}

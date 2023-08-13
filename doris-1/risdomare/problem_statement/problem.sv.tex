@@ -1,0 +1,44 @@
+\problemname{Risdomare}
+\noindent
+Sir Dorian älskar att äta ris. 
+Lunch äter han därför alltid på rispalatset, där det varje dag serveras $N$ portioner ris.
+Han har ätit ris så länge att han kan avgöra antalet riskorn i en portion och storleken på riskornen i portionen mätt i nanometer bara genom att kolla på portionen. 
+
+\noindent
+För att verkligen kunna uppskatta riset vill han bara äta en portion ris per dag. 
+Efter år av rissmakande har Dorian börjat föredra rissorter med större riskorn. När han väljer sin portion tycker han att det är exakt lika viktigt att få en stor portion och att riskornen är stora.
+Därför vill han äta portionen ris med störst summa av antalet riskorn och storlek på riskorn.
+Om det finns flera portioner med samma summa av antal riskorn och storlek så har han lite svårare att bestämma sig.
+Beroende på hur han känner den dagen tar han antingen den portionen med fler riskorn eller större riskorn av alla med största möjliga summa.
+Dorian har gjort en lista på antal riskorn och riskornens storlek för varje av de $N$ portioner, men orkar inte avgöra vilken som han borde välja.
+Därför vill han att du ska skriva ett program som bestämmer vilken portion han borde välja givet hans lista och preferens den dagen.
+
+\section*{Indata}
+\noindent
+Den första raden innehåller heltalet $N$ $(1 \leq N \leq 10^5)$, antalet portioner.
+
+\noindent
+Därefter följer en rad med en sträng som antingen är ``\texttt{antal}'' eller ``\texttt{storlek}'' - om Sir Dorian föredrar en större portion eller större korn idag.
+
+\noindent
+Sen följer $N$ rader, där den $i$:te raden innehåller talen $A_i$ och $S_i$ $(0 \leq A_i, S_i \leq 10^9)$, antalet riskorn respektive storleken på riskornen mätt i nanometer i den $i$:te portionen.
+Det är garanterat att det inte finns två portioner med exakt samma mängd riskorn och storlek på riskorn. Detta garanterar att lösningen är unik.
+
+\section*{Utdata}
+\noindent
+Skriv ut ett heltal, indexet på den portionen som Sir Dorian kommer gilla mest.
+
+\section*{Poängsättning}
+\noindent
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$    & $20$       &  $N \leq 100$  \\ \hline 
+  $2$    & $30$       &  Alla summor av antal riskorn och storlek på riskorn är unika \\ \hline 
+  $3$    & $20$       &  Dorian föredrar större portioner idag \\ \hline
+  $4$    & $30$       &  Inga ytterligare begränsningar \\ \hline
+\end{tabular}

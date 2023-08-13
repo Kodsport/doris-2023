@@ -1,0 +1,25 @@
+\problemname{BizzFuzz}
+\noindent
+Algot was just at an interview at a software company and had to solve the classic FizzBuzz problem. It consists of printing the integers from 1 to 100, but replacing each integer divisible by 3 to "Fizz", each divisible by 5 to "Buzz" and each divisible by both to "FizzBuzz".
+
+\noindent
+He however has a slight variation in mind, and would like you to calculate the number of integers between $A$ and $B$ (inclusive) divisible by both $C$ and $D$.
+\section*{Input}
+\noindent
+One row with the integers $A, B, C, D$ such that \(1 \leq A \leq B \leq 10^{18}\) and \(1 \leq C, D \leq B\) .
+\section*{Output}
+\noindent
+One row with the number of $X$ such that $A \le X \le B$ where $C$ divides $X$ and $D$ divides $X$.
+\section*{Scoring}
+\noindent
+Your solution will be tested on a number of testgroups.
+To earn points in a testgroup all tests in it must succeed.
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Points & Limits \\ \hline
+  $1$    & $20$       &  $|B-A| < 1000$ \\ \hline 
+  $2$    & $20$       &  $A = 1, C = 1$ \\ \hline
+  $3$    & $20$       &  $D = 2 \cdot C$ \\ \hline
+  $4$    & $40$       &  No further restrictions \\ \hline
+\end{tabular}

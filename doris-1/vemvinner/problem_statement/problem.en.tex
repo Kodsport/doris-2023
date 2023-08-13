@@ -1,0 +1,32 @@
+\problemname{Who wins?}
+\noindent
+Johan and Abdullah are playing tic-tac-toe, but they are having a hard time figuring out who won.
+To win in tic-tac-toe you need to have three of your letter in a row, either vertically, horizontally, or diagonally.
+Johan uses the letter \texttt{X} and makes the first move, and Abdullah uses the letter \texttt{O}. Help them figure out who has won, if anyone.
+
+\section*{Input}
+\noindent
+
+\noindent
+Input consists of a valid tic-tac-toe position, where an underscore \texttt{\_} represents an empty square, and the letters \texttt{X} and \texttt{O} represent Johan's and Abdullah's moves.
+The position is described by three rows, each containing three space-separated characters each. It is guaranteed that at most one player has won.
+
+\section*{Output}
+\noindent
+Print the winner of the game.
+\noindent
+First print the name, ``\texttt{Johan}'', ``\texttt{Abdullah}'' or ``\texttt{ingen}'', then ``\texttt{har vunnit}''.
+\section*{Grading}
+\noindent
+Your solution will be tested on a number of test-case groups.
+\noindent
+To receive points for a group, your solution must correctly solve every test-case in the group.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+  Group & Point value & Restrictions \\ \hline
+  $1$    & $20$       &  No player has three letters in a row along a diagonal  \\ \hline 
+  $2$    & $40$       &  Abdullah is not the winner of any game \\ \hline
+  $3$    & $40$       &  No further restrictions \\ \hline
+\end{tabular}
