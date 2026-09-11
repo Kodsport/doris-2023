@@ -1,24 +1,28 @@
 \problemname{Sångbok}
-\noindent
 Doris ska vara toastmaster på en sittning med sin sektion på universitet. Under denna ska de så klart sjunga en massa sånger! 
 Eftersom Doris har dålig koll på låtarna i deras sångbok har hon valt att istället välja så många låtar som möjligt under de $t$ minuter som är allokerade för sång. 
+För att undvika att tråka gästerna kan varje låt bara sjungas som mest en gång.
 Eftersom hon är i övrigt upptagen med att välja vem som ska tala, och vad som får sägas så vill hon ha hjälp med detta.
+
 \section*{Indata}
-\noindent
-Börjar med en rad med två heltal, antalet minuter allokerade för sång, $t < 10^5$, och antalet låtar i sångboken, $n< 10^5$. Sedan följer en rad med $n$ heltal, antalet sekunder hon uppskattar att det tar att sjunga varje sång $s_i < t \cdot 60$.
+Den första raden i indatan innehåller heltalen $t$ och $n$ ($1 \leq t,n \leq 10^5$),
+antalet minuter allokerade för sång och antalet låtar i sångboken.
+
+Den följande raden innehåller $n$ heltal $s_1, s_2, \dots, s_n$ ($1 \leq s_i \leq t \cdot 60$),
+där $s_i$ är antalet sekunder hon uppskattar att det tar att sjunga sång $i$.
+
 \section*{Utdata}
-\noindent
-En rad med ett heltal, antalet sekunder det minimalt tar att sjunga det största möjliga antalet sånger.
+Skriv ut ett heltal: minsta antalet sekunder det tar att sjunga det största möjliga antalet sånger.
+
 \section*{Poängsättning}
-\noindent
 Din lösning kommer att testas på en mängd testfallsgrupper.
 För att få poäng för en grupp så måste du klara alla testfall i gruppen.
 
 \noindent
-\begin{tabular}{| l | l | l |}
+\begin{tabular}{| l | l | p{12cm} |}
 \hline
-  Grupp & Poängvärde & Gränser \\ \hline
-  $1$    & $20$       &  Alla låtar är tar lika lång tid att sjunga \\ \hline 
+  \textbf{Grupp} & \textbf{Poäng} & \textbf{Gränser} \\ \hline
+  $1$    & $20$       &  Alla låtar tar lika lång tid att sjunga. \\ \hline 
   $2$    & $40$       &  $n \leq 16$ \\ \hline
-  $3$    & $40$       &  Inga ytterligare begränsningar \\ \hline
+  $3$    & $40$       &  Inga ytterligare begränsningar. \\ \hline
 \end{tabular}

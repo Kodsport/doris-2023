@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-PPATH=$(realpath ..)
-
-REQUIRE_SAMPLE_REUSE=0
-. ../../testdata_tools/gen.sh
+. ../../../testdata_tools/gen.sh
 
 use_solution sangbok.py
 
@@ -21,18 +18,24 @@ tc same_s_max_100 gen max_n=100 max_t=100 all_s_same=1
 tc same_s_max_1000 gen max_n=1000 max_t=1000 all_s_same=1
 tc same_s_max_10000 gen max_n=10000 max_t=10000 all_s_same=1
 tc same_s_max_100000 gen max_n=100000 max_t=100000 all_s_same=1
+tc same_s_max_100000-2 gen max_n=10 max_t=100000 all_s_same=1
+tc same_s_max_100000-3 gen max_n=100 max_t=100000 all_s_same=1
+tc same_s_max_100000-4 gen max_n=1000 max_t=100000 all_s_same=1
 
 group g2 40
 limits max_n=16
+include_group sample
+tc small_n_max_t_10 gen max_n=16 max_t=10
+tc small_n_max_t_20 gen max_n=16 max_t=20
+tc small_n_max_t_30 gen max_n=16 max_t=30
+tc small_n_max_t_40 gen max_n=16 max_t=40
 tc small_n_max_t_100 gen max_n=16 max_t=100
 tc small_n_max_t_1000 gen max_n=16 max_t=1000
 tc small_n_max_t_10000 gen max_n=16 max_t=10000
 tc small_n_max_t_100000 gen max_n=16 max_t=100000
 
 group g3 40
-include_group g1
-include_group g2
-include_group sample
+include_group g1 g2
 tc full1 gen
 tc full2 gen
 tc full3 gen
